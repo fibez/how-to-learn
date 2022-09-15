@@ -13,7 +13,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
   display: flex;
@@ -75,6 +74,52 @@
   top: 64px;
 }
 
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.two-columns {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2rem;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.two-columns__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
