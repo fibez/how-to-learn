@@ -274,7 +274,6 @@
   position: absolute;
   top: 0;
   right: -210px;
-  z-index: 0;
 }
 
 /* .table__heading_theme_dark {
