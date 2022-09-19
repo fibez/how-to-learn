@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -68,7 +64,7 @@
   height: 608px;
   z-index: 1;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -164,6 +160,7 @@
 }
 
 .table__heading {
+  margin: 0;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
@@ -254,7 +251,7 @@
   font-weight: normal;
   line-height: 34px;
 }
-/* _____________________________________________________________ */
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -285,8 +282,6 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .footer__column_content_copyright {
@@ -333,8 +328,3 @@
   height: 16px;
   margin-right: 10px;
 }
-/* .table__heading_theme_dark {
-}
-
-.table__text_theme_dark {
-} */
