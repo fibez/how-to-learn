@@ -282,7 +282,8 @@
 }
 
 .footer {
-  padding-top: 60px;
+  box-sizing: border-box;
+  padding: 60px 0 40px 0;
   background-color: #1f1f1f;
   min-height: 350px;
   color: white;
@@ -311,6 +312,36 @@
 .footer__author {
   margin: 0;
   padding: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 /* .table__heading_theme_dark {
 }
