@@ -1,0 +1,11 @@
+.cards__description {
+  margin: 16px 0 60px 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.cards__description:last-of-type {
+  margin-bottom: 0;
+}
