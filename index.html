@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/pages.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Научиться учиться</title>
   </head>
@@ -14,7 +14,7 @@
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
-          использовать в своей жизни?<a class="header__link" href="#">
+          использовать в своей жизни?<a class="header__link opacity" href="#">
             Узнать &rarr;</a
           >
         </p>
@@ -55,7 +55,11 @@
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
           <ul class="cards">
             <li class="cards__item">
-              <img class="cards__image" src="/images/cards-attention.png" />
+              <img
+                class="cards__image"
+                src="/images/cards-attention.png"
+                alt="Картинка с надписью: 101 эссе, чтобы поменять мышление"
+              />
               <h3 class="cards__title">Два вида внимания</h3>
               <p class="cards__description">
                 Глубокие знания возникают, если чередовать сфокусированное и
@@ -63,7 +67,11 @@
               </p>
             </li>
             <li class="cards__item">
-              <img class="cards__image" src="/images/cards-recall.png" />
+              <img
+                class="cards__image"
+                src="/images/cards-recall.png"
+                alt="Фотография задумчивой статуи"
+              />
               <h3 class="cards__title">Recall</h3>
               <p class="cards__description">
                 Вспоминайте изученное — это позволит соединить разрозненные
@@ -71,7 +79,11 @@
               </p>
             </li>
             <li class="cards__item">
-              <img class="cards__image" src="/images/cards-interliving.png" />
+              <img
+                class="cards__image"
+                src="/images/cards-interliving.png"
+                alt="Фотография библиотеки"
+              />
               <h3 class="cards__title">Интерливинг</h3>
               <p class="cards__description">
                 Изучайте несколько навыков одновременно, они обогащают друг
@@ -79,7 +91,11 @@
               </p>
             </li>
             <li class="cards__item">
-              <img class="cards__image" src="/images/cards-question.png" />
+              <img
+                class="cards__image"
+                src="/images/cards-question.png"
+                alt="Фотография белой комнаты с человеком по центру"
+              />
               <h3 class="cards__title">Вопросы</h3>
               <p class="cards__description">
                 Слушая преподавателя, придумывайте хороший вопрос, который вас
@@ -87,7 +103,11 @@
               </p>
             </li>
             <li class="cards__item">
-              <img class="cards__image" src="/images/cards-competence.png" />
+              <img
+                class="cards__image"
+                src="/images/cards-competence.png"
+                alt="Фотография стопки книг"
+              />
               <h3 class="cards__title">Иллюзия компетентности</h3>
               <p class="cards__description">
                 Повторите про себя, запишите, расскажите другу: вам только
@@ -138,7 +158,7 @@
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть.</p>
-          <a class="feynman__link" href="#">Подробнее &rarr;</a>
+          <a class="feynman__link opacity" href="#">Подробнее &rarr;</a>
           <img
             class="feynman__img"
             src="./images/feynman.png"
@@ -212,7 +232,7 @@
                 src="images/khan-book.jpg"
                 alt="Обложка книги Весь мир - школа"
               />
-              <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
+              <a class="khan__buy-link opacity" href="#">Купить книгу &rarr;</a>
             </div>
           </div>
         </section>
@@ -285,6 +305,46 @@
           </ul>
           <div class="kaufman__triangle rotation"></div>
         </section>
+        <section class="resources">
+          <h2 class="section-title">Полезные ресурсы</h2>
+          <p class="section-subtitle">
+            Больше материалов о техниках и лайфхаках обучения
+          </p>
+          <ul class="resources__logo-zone">
+            <li>
+              <a class="resources__link opacity" href="#"
+                ><img
+                  class="resources__logo"
+                  src="/images/logo/resources-arzamas.svg"
+                  alt="Логотип издательства Арзамас"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link opacity" href="#"
+                ><img
+                  class="resources__logo"
+                  src="/images/logo/resources-n1.svg"
+                  alt="Логотип научно-популярного издательства N+1"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link opacity" href="#"
+                ><img
+                  class="resources__logo"
+                  src="/images/logo/resources-strelka.svg"
+                  alt="Логотип издательства Стрелка"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link opacity" href="#"
+                ><img
+                  class="resources__logo"
+                  src="/images/logo/resources-polka.svg"
+                  alt="Логотип образовательного проекта Полка"
+              /></a>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__columns">
@@ -295,16 +355,22 @@
           <nav class="footer__column footer__column_content_info">
             <h3 class="footer__column-heading">О практикуме</h3>
             <ul class="footer__column-links">
-              <li><a class="footer__column-link" href="#">Главная</a></li>
-              <li><a class="footer__column-link" href="#">Концепция</a></li>
-              <li><a class="footer__column-link" href="#">Наставники</a></li>
+              <li>
+                <a class="footer__column-link opacity" href="#">Главная</a>
+              </li>
+              <li>
+                <a class="footer__column-link opacity" href="#">Концепция</a>
+              </li>
+              <li>
+                <a class="footer__column-link opacity" href="#">Наставники</a>
+              </li>
             </ul>
           </nav>
           <nav class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Соцсети</h3>
             <ul class="footer__column-links">
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link opacity" href="#"
                   ><img
                     class="footer__social-icon"
                     src="./images/facebook_color_white.svg"
@@ -313,7 +379,7 @@
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link opacity" href="#"
                   ><img
                     class="footer__social-icon"
                     src="./images/vk_color_white.svg"
@@ -322,7 +388,7 @@
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link opacity" href="#"
                   ><img
                     class="footer__social-icon"
                     src="./images/instagram_color_white.svg"
